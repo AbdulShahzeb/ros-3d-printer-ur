@@ -54,7 +54,7 @@ sudo apt install python3-dev python3-pip
 # Install required packages from requirements.txt
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
-git clone git@github.com:AbdulShahzeb/robot_control.git
+git clone git@github.com:AbdulShahzeb/ros-3d-printer-ur.git
 pip install -r requirements.txt
 ```
 
@@ -88,7 +88,7 @@ source install/setup.bash
 ### Usage
 ```bash
 # First time setup (only do this once)
-cd ~/ros2_ws/src/robot_control
+cd ~/ros2_ws/src/ros-3d-printer-ur
 cp local/ur_ros2_driver.sh local/ur10e_calibration.yaml local/microros.sh ~
 cd ~
 chmod +x ur_ros2_driver.sh && chmod +x microros.sh
